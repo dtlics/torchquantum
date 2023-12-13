@@ -50,7 +50,7 @@ test_error:0.02791733444759953
 best_val_error:0.02812538752213184
 ```
 ## DataSet
-The data_set is stored in [Dataset Folder](examples/quest/data)
+The data_set is stored in [Dataset Folder](./examples/quest/data)
 
 ## Environment
 The environment is as follows:
