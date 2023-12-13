@@ -50,7 +50,7 @@ test_error:0.02791733444759953
 best_val_error:0.02812538752213184
 ```
 ## DataSet
-The data_set is stored in [Dataset Folder](./examples/quest/data)
+The data_set is stored in [Dataset Folder](https://github.com/Hanrui-Wang/quantum-quest-data/tree/600fcb10ad331adfd4aca5b780dc4ca1285e4504)
 
 ## Environment
 The environment is as follows:
