@@ -24,7 +24,7 @@ SOFTWARE.
 
 import torch
 import torch.nn.functional as F
-from torch_geometric.nn import TransformerConv, global_mean_pool
+from torch_geometric.nn import GATConv, global_mean_pool
 
 
 class Simple_Model(torch.nn.Module):
@@ -55,9 +55,9 @@ class Simple_Model(torch.nn.Module):
         for i in self.mask:
             if i:
                 xlenth += 1
-        setattr(self, f"conv{0}", TransformerConv(xlenth, 24))
+        setattr(self, f"conv{0}", GATConv(xlenth, 24))
         for i in range(1, self.args.num_layers):
-            setattr(self, f"conv{i}", TransformerConv(24, 24))
+            setattr(self, f"conv{i}", GATConv(24, 24))
 
     def forward(self, data):
         x, edge_index, gf = data.x, data.edge_index, data.global_features
