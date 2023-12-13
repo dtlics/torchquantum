@@ -11,7 +11,7 @@ model:
   use_T1T2: True
   use_gate_error: True
   use_gate_index: True
-  num_layers: 2
+  num_layers: 4
 
 num_epochs: 100
 batch_size: 1000
